@@ -1,37 +1,17 @@
 Yaml
 YAML parser library for cocoa.
 
-Kenji Nishishiro <marvel@programmershigh.org>
+Author: Kenji Nishishiro <marvel@programmershigh.org>
+Re-packaged by: Piotr Banasik <piotr.banasik@gmail.com>
 
+-----
 
-- Build instructions
+- How to include in your project
 
-1.Get LibYAML library
-http://pyyaml.org/wiki/LibYAML
-
-2. Add files to Xcode project from LibYAML
-yaml-0.1.3/src/api.c
-yaml-0.1.3/src/dumper.c
-yaml-0.1.3/src/emitter.c
-yaml-0.1.3/src/loader.c
-yaml-0.1.3/src/parser.c
-yaml-0.1.3/src/reader.c
-yaml-0.1.3/src/scanner.c
-yaml-0.1.3/src/writer.c
-yaml-0.1.3/src/yaml_private.h
-
-3.Add header search path to Xcode project
-yaml-0.1.3/include
-
-4. Add preprocessor macro to Xcode project
-YAML_VERSION_MAJOR=0
-YAML_VERSION_MINOR=1
-YAML_VERSION_PATCH=3
-YAML_VERSION_STRING=\"0.1.3\"
-
-5. Add files to Xcode project from Yaml
-YamlParser.h YamlParser.m
-
+ * Add a submodule for this project
+ * Drag the xcodeproj file into your project
+ * Add this project as a library to link against
+ * Make sure its also included in build dependancies
 
 - How to use Yaml
 
